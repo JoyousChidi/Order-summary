@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    width:100%;
+    min-height:100vh;
+    height:100%;
+}
+
+:root{
+    /* primary colours  */
+
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* neutral colours  */
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+.wrapper{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--Very-pale-blue);
+}
+
+.container{
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center ;  
+    position: relative;
+    background-color: var(--Pale-blue);
+}
+
+.image img{
+     position: relative; 
+    width:100%;
+    height:50%;
+}
+
+.container-1{
+     position: absolute;
+    border-radius: 1.3em;
+    height:90%;
+    width:87%;
+    max-width: 290px;
+    margin-top:28px;  
+    background-color: var(--Very-pale-blue); 
+}
+
+.container-1 img{
+    width: 100%;
+    height:30%;
+    border-top-right-radius: 1.2em;
+    border-top-left-radius: 1.2em;  
+}
+
+.summary{
+    text-align:center;
+    padding:10px;
+}
+
+.summary h1{
+    padding: 5px;
+    font-size: 17px;
+    color:hsl(230, 10%, 12%);
+    text-shadow: 1px 1px 2px var(--Desaturated-blue);
+
+}
+
+.summary p{
+    font-size:1em;
+    padding: 10px;
+    color: var(--Desaturated-blue);
+}
+
+.row{
+    /* background-color: var(--Pale-blue) ; */
+    background-color: hsl(227, 82%, 96%);
+    border-radius: .6em;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 13%;
+    width: 80%;
+    margin-top:5px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 10px;
+}
+
+.row img{
+    width: 17%;
+    height: 100%;
+}
+
+
+.plan{
+    margin-left: -5px;  
+}
+
+.plan h3{
+    font-size: 11px;
+}
+
+.plan p{
+    font-size: 11px;
+    color: var(--Desaturated-blue);
+}
+
+.change{
+    padding: 1px;
+    font-size: 10px;
+    color: var(--Bright-blue);
+}
+
+.change:hover{
+    text-decoration: none;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form a{
+    text-decoration: none;
+    text-align: center;
+    width: 80%;
+     padding: 10px;
+     margin-left: auto;
+    margin-right: auto; 
+    margin-top: 5px;
+    border-radius: .8em;
+    font-size: 10px;
+    font-weight: bolder;
+
+}
+
+ .payment{
+    color: var(--Very-pale-blue);
+    background-color: var(--Bright-blue);
+    box-shadow:0 5px 10px  var(--Desaturated-blue);
+    margin-bottom: 7px;
+}
+
+.cancel{
+    color: var(--Desaturated-blue);
+}
+
+footer{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    left:0;
+    display: flex;
+    justify-content: center;
+}
